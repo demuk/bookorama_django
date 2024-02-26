@@ -7,5 +7,5 @@ class User(models.Model):
     last_name = models.CharField(max_length=255)
     user_name = models.CharField(max_length=20)
     email = models.EmailField(max_length=254)
-    bio = models.TextField((""))
-    last_seen = models.DateTimeField((""), auto_now=False, auto_now_add=True)
+    bio = models.TextField(verbose_name="Bio")
+    last_seen = models.DateTimeField(verbose_name="Last Seen", auto_now=True)
