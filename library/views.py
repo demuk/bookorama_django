@@ -19,3 +19,6 @@ def create_user(request):
 
 def success(request):
     return render(request,'success.html')
+
+def login(request):
+    return render(request, 'login.html')
